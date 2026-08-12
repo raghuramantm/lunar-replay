@@ -1,0 +1,30 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Watch the landings</title>
+<style>
+ body{margin:0;padding:24px;font-family:-apple-system,Segoe UI,Roboto,sans-serif;
+       background:#faf7f9;color:#2a2a30;text-align:center}
+ h1{font-size:1.5rem;margin:0 0 4px} p.sub{color:#904f8b;margin:0 0 22px}
+ .row{display:flex;flex-wrap:wrap;gap:18px;justify-content:center}
+ .card{flex:1 1 380px;max-width:520px}
+ .card img{width:100%;border-radius:8px;border:5px solid;display:block}
+ .ok img{border-color:#2e7d32} .bad img{border-color:#c62828}
+ .ok h2{color:#2e7d32} .bad h2{color:#c62828}
+ h2{font-size:1.1rem;margin:0 0 8px;letter-spacing:.04em}
+ .score{font-weight:700;margin-top:6px}
+ footer{margin-top:26px;color:#6b6470;font-size:.85rem;line-height:1.5}
+</style></head><body>
+<h1>Can a machine tell when its own body is failing?</h1>
+<p class="sub">PPO (Pilot B) &middot; the same pilot, the same landing site</p>
+<div class="row">
+  <div class="card ok"><h2>HEALTHY ENGINE</h2>
+    <img src="ppo_healthy.gif" alt="healthy landing">
+    <div class="score">score +233</div></div>
+  <div class="card bad"><h2>DAMAGED ENGINE</h2>
+    <img src="ppo_damaged.gif" alt="damaged landing">
+    <div class="score">score &minus;48</div></div>
+</div>
+<footer>The engine is weakened to a quarter of its power part-way through the descent.<br>
+Raghu Raman T. M. &middot; Supervisor: Dr Andrew Starkey &middot; MSc Robotics &amp; AI,
+University of Aberdeen</footer>
+</body></html>
